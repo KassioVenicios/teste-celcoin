@@ -1,3 +1,4 @@
+import SideMenu from '../components/SideMenu';
 import {
   AppContainer,
   ContentContainer,
@@ -9,7 +10,9 @@ function App() {
   return (
     <AppContainer>
       <SideMenuContainer>
-
+        <SideMenu>
+          
+        </SideMenu>
       </SideMenuContainer>
       <ContentContainer>
         <TopNavBarContainer>
