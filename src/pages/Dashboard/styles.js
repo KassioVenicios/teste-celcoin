@@ -15,6 +15,9 @@ export const Section = styled.div`
     margin-left: 16px;
     width: calc(100%/4 - 3*4px);
   }
+  &.margin-16 {
+    margin-bottom: 16px;
+  }
 `;
 
 export const SectionCard = styled.div`

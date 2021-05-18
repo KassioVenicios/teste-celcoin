@@ -1,10 +1,12 @@
 import { Provider, useSelector } from 'react-redux';
+import newsStore from '../../store/news';
 import mostPerformedTestStore from '../../store/mostperformedtest';
 import attendanceHistoricStore from '../../store/attendanceHistoric';
 import InfoCard from '../../components/InfoCard';
 import MostPerformedTest from '../../components/MostPerformedTest';
 import BlueButton from '../../components/BlueButton';
 import AttendanceHistoricList from '../../components/AttendanceHistoricList';
+import NewsList from '../../components/NewsList';
 import {
   CardsList,
   Section,
@@ -49,6 +51,12 @@ function Dashboard() {
           </Provider>
         </Section>
       </SectionLine>
+      <Section className='margin-16'>
+        <SectionTitle>Atualizações importantes</SectionTitle>
+        <Provider store={newsStore}>
+          <NewsList />
+        </Provider>
+      </Section>
     </>
   );
 }
