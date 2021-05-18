@@ -24,7 +24,7 @@ export const Card = styled.div`
   &:before {
     content: '';
     position: absolute;
-    top: 12px;
+    bottom: -8px;
     right: 16px;
     width: 80%;
     height: 172px;
@@ -40,6 +40,46 @@ export const CardContainer = styled.div`
   background-color: #FFF;
   padding: 16px 24px 32px 16px;
   box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
+  transition: .5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
+  }
+`;
+
+export const CardHover = styled.div`
+  position: absolute;
+  right: 16px;
+  top: -48px;
+  height: 80px;
+  padding: 16px;
+  background: #FFF;
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  opacity: ${props => !! props.opened ? 1 : 0};
+  z-index: ${props => !! props.opened ? 2 : -1};
+  transition: .5s ease-in-out;
+`;
+
+export const CardHoverTitle = styled.span`
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 8px;
+  color: #303B5A;
+`;
+
+export const CardHoverData = styled.span`
+  /* font-family: Poppins; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 24px;
+  color: ${props => props.color};
 `;
 
 export const IconContainer = styled.div`
