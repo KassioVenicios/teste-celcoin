@@ -5,6 +5,8 @@ export const SectionLine = styled.div`
 `;
 
 export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
   margin-bottom: 56px;
   &.size3-4 {
     flex-grow: 1;
@@ -16,7 +18,8 @@ export const Section = styled.div`
 `;
 
 export const SectionCard = styled.div`
-  height: 320px;
+  flex-grow: 1;
+  min-height: 320px;
   padding: 16px;
   background: #FFF;
   border-radius: 6px;
