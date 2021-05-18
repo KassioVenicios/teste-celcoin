@@ -21,7 +21,6 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
   position: relative;
 
   &:after {
@@ -39,7 +38,6 @@ export const IconContainer = styled.div`
 
 export const IconSearchContainer = styled(IconContainer)`
   position: absolute;
-  margin: 0;
   top: 10px;
   left: 10px;
   color: #787686;
@@ -59,11 +57,14 @@ export const Search = styled.input`
 export const RightSide = styled.div`
   display: flex;
   align-items: center;
+
+  & > * {
+    margin-left: 20px;
+  }
 `;
 
 export const AppsIcon = styled.div`
   width: 20px;
   height: 20px;
-  margin-left: 20px;
   background-image: url(${appsIcon});
 `;
