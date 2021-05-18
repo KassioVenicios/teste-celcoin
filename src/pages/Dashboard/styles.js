@@ -21,6 +21,11 @@ export const SectionCard = styled.div`
   background: #FFF;
   border-radius: 6px;
   box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
+  transition: .5s ease-in-out;
+
+  &:hover {
+    box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
+  }
 `;
 
 export const SectionTitle = styled.h1`
