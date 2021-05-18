@@ -11,6 +11,7 @@ export const BlueButtonContainer = styled.span`
   line-height: 10px;
   font-weight: bold;
   font-style: normal;
+  text-align: center;
   letter-spacing: 1px;
   padding: 8px 16px 7px;
   text-transform: uppercase;
