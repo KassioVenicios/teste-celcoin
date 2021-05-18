@@ -15,3 +15,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.placeholderInput::placeholder {
+  /* font-family: 'Open Sans'; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: rgba(44, 46, 61, 0.3);
+}
