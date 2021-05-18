@@ -9,7 +9,7 @@ export const AppContainer = styled.div`
 `;
 
 export const SideMenuContainer = styled.div`
-  width: 248px;
+  min-width: 248px;
   height: 100%;
 `;
 
@@ -24,4 +24,8 @@ export const TopNavBarContainer = styled.div`
   height: 88px;
   background-color: #FFFFFF;
   border-radius: 30px 30px 0px 0px;
+`;
+
+export const PageContainer = styled.div`
+  padding: 32px 40px 24px 32px;
 `;

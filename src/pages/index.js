@@ -1,17 +1,20 @@
 import { Provider } from 'react-redux';
-import store from '../store';
+import MenuStore from '../store';
+import InfoStore from '../store/generalinfo';
 import SideMenu from '../components/SideMenu';
 import TopNavBar from '../components/TopNavBar';
+import Dashboard from './Dashboard';
 import {
   AppContainer,
   ContentContainer,
+  PageContainer,
   SideMenuContainer,
-  TopNavBarContainer
+  TopNavBarContainer,
 } from './styles';
 
 function App() {
   return (
-    <Provider store={store}>
+    <Provider store={MenuStore}>
       <AppContainer>
         <SideMenuContainer>
           <SideMenu />
@@ -20,6 +23,11 @@ function App() {
           <TopNavBarContainer>
             <TopNavBar />
           </TopNavBarContainer>
+          <PageContainer>
+            <Provider store={InfoStore}>
+              <Dashboard />
+            </Provider>
+          </PageContainer>
         </ContentContainer>
       </AppContainer>
     </Provider>

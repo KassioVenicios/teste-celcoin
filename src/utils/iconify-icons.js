@@ -5,6 +5,8 @@ import baselineSearch from '@iconify-icons/ic/baseline-search';
 import baselineNotifications from '@iconify-icons/ic/baseline-notifications';
 import baselineSettings from '@iconify-icons/ic/baseline-settings';
 import logoutOutline from '@iconify-icons/heroicons-outline/logout';
+import baselinePersonOutline from '@iconify-icons/ic/baseline-person-outline';
+import bxTestTube from '@iconify-icons/bx/bx-test-tube';
 
 export const getIcon = name => {
   switch(name) {
@@ -14,6 +16,8 @@ export const getIcon = name => {
     case 'baseline-notifications': return baselineNotifications;
     case 'baseline-settings': return baselineSettings;
     case 'logout-outline': return logoutOutline;
+    case 'baseline-person-outline': return baselinePersonOutline;
+    case 'bx-test-tube': return bxTestTube;
     default: return noticeIcon;
   };
 };
