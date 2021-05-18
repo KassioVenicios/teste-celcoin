@@ -7,7 +7,7 @@ export const SectionLine = styled.div`
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 56px;
+  margin-bottom: 48px;
   &.size3-4 {
     flex-grow: 1;
   }
