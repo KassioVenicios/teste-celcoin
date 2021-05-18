@@ -57,6 +57,7 @@ export const ItemActiveBackground = styled.div`
   height: 56px;
   background-color: #EFF2F9;
   border-radius: 30px 0 0 30px;
+  transition: top .8s;
 
   &:before {
     content: '';

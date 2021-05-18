@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import SideMenuItem from '../SideMenuItem';
 import {
   Header,
@@ -9,16 +10,11 @@ import {
   Logo,
 } from './styles';
 
-const MenuItems = [
-  { name: 'Dashboard', icon: 'home-outlined', active: true },
-  { name: 'Pacientes', icon: 'product-downloadable' },
-  { name: 'Testes', icon: 'product-downloadable' },
-  { name: 'Configurações', icon: 'product-downloadable' },
-];
-
-const getActivedMenuIndex = () => MenuItems.findIndex(item => !! item.active);
-
 function SideMenu() {
+
+  const MenuItems = useSelector(state => state.menus);
+  const getActivedMenuIndex = () => MenuItems.findIndex(item => !! item.active);
+
   return (
     <>
       <Header>
@@ -29,14 +25,9 @@ function SideMenu() {
       <Items>
         <ItemActiveBackground index={getActivedMenuIndex()} />
         {
-          MenuItems.map(item => (
-            <SideMenuItem
-              key={item.name}
-              icon={item.icon}
-              description={item.name}
-              active={item.active}>
-            </SideMenuItem>
-          ))
+          MenuItems.map(item =>
+            <SideMenuItem key={item.id} item={item} />
+          )
         }
       </Items>
     </>

@@ -1,3 +1,4 @@
+import { useDispatch } from 'react-redux';
 import { Icon } from '@iconify/react';
 import { getIcon } from '../../utils/iconify-icons';
 import {
@@ -6,13 +7,22 @@ import {
   ItemContainer,
 } from './styles';
 
-function SideMenuItem({ description, icon, active }) {
+function SideMenuItem({ item }) {
+
+  const dispatch = useDispatch();
+
+  function changeActivedMenu() {
+    if (!!item.clickable) {
+      dispatch({ type: 'CHANGE_ACTIVED_MENU', id: item.id });
+    }
+  }
+
   return (
-    <ItemContainer active={active}>
+    <ItemContainer active={item.active} onClick={changeActivedMenu}>
       <IconContainer>
-        <Icon icon={getIcon(icon)} />
+        <Icon icon={getIcon(item.icon)} />
       </IconContainer>
-      <Description>{description}</Description>
+      <Description>{item.name}</Description>
     </ItemContainer>
   );
 }
