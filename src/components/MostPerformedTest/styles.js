@@ -51,24 +51,5 @@ export const TestData = styled.span`
   font-weight: bold;
   font-style: normal;
   color: #303B5B;
-`;
-
-export const BuyMoreButton = styled.span`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 128px;
-  height: 24px;
-  cursor: pointer;
-  margin-left: 16px;
-  /* font-family: 'Open Sans'; */
-  font-size: 10px;
-  line-height: 8px;
-  font-weight: bold;
-  font-style: normal;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #FFF;
-  border-radius: 20px;
-  background: linear-gradient(93.05deg, #00A3FF 0%, #0057FF 100%);
+  margin-right: 16px;
 `;

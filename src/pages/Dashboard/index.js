@@ -2,13 +2,13 @@ import { Provider, useSelector } from 'react-redux';
 import store from '../../store/mostperformedtest';
 import InfoCard from '../../components/InfoCard';
 import MostPerformedTest from '../../components/MostPerformedTest';
+import BlueButton from '../../components/BlueButton';
 import {
   CardsList,
   Section,
   SectionCard,
   SectionLine,
   SectionTitle,
-  SectionTitleButton,
 } from './styles';
 
 function Dashboard() {
@@ -29,7 +29,8 @@ function Dashboard() {
         <Section className='size3-4'>
           <SectionTitle>
             Histórico de atendimentos
-            <SectionTitleButton>ver todos</SectionTitleButton>
+            <span style={{ marginRight: '16px' }}/>
+            <BlueButton>ver todos</BlueButton>
           </SectionTitle>
           <SectionCard>
 

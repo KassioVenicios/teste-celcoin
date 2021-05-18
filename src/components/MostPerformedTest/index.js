@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
+import BlueButton from '../BlueButton';
 import {
-  BuyMoreButton,
   CustomIcon,
   Footer,
   IconContainer,
@@ -22,7 +22,7 @@ function MostPerformedTest() {
       <Subtitle>Licenças Disponíveis</Subtitle>
       <Footer>
         <TestData>{Test.data}</TestData>
-        <BuyMoreButton>Comprar Mais</BuyMoreButton>
+        <BlueButton>Comprar Mais</BlueButton>
       </Footer>
     </>
   );
