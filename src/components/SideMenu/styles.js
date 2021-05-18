@@ -17,7 +17,7 @@ export const Logo = styled.div`
   background-image: url(${logo});
 `;
 
-export const HeaderTitle = styled.h1`
+export const HeaderTitle = styled.span`
   /* font-family: Poppins; */
   margin: 0;
   color: #FFF;
