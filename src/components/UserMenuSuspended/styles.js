@@ -4,13 +4,15 @@ export const UserMenuSuspendedContent = styled.div`
   position: absolute;
   left: 0;
   bottom: calc(-144px - 8px);
-  display: ${props => !! props.opened ? 'flex' : 'none'};
   flex-direction: column;
   width: 152px;
   height: 144px;
   border-radius: 8px;
   background-color: #FFF;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  opacity: ${props => !! props.opened ? 1 : 0};
+  z-index: ${props => !! props.opened ? 2 : -1};
+  transition: .8s;
 `;
 
 export const UserMenuItem = styled.div`
