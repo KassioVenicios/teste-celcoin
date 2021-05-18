@@ -7,6 +7,7 @@ export const ItemContainer = styled.div`
   padding: 24px 0;
   padding-left: 23px;
   cursor: pointer;
+  transition: color 0.4s;
 `;
 
 export const IconContainer = styled.span`
