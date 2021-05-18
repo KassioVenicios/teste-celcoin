@@ -12,7 +12,7 @@ export const UserMenuSuspendedContent = styled.div`
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
   opacity: ${props => !! props.opened ? 1 : 0};
   z-index: ${props => !! props.opened ? 2 : -1};
-  transition: .8s;
+  transition: .3s ease-in-out;
 `;
 
 export const UserMenuItem = styled.div`
