@@ -4,6 +4,7 @@ import noticeIcon from '@iconify-icons/gridicons/notice';
 import baselineSearch from '@iconify-icons/ic/baseline-search';
 import baselineNotifications from '@iconify-icons/ic/baseline-notifications';
 import baselineSettings from '@iconify-icons/ic/baseline-settings';
+import logoutOutline from '@iconify-icons/heroicons-outline/logout';
 
 export const getIcon = name => {
   switch(name) {
@@ -12,6 +13,7 @@ export const getIcon = name => {
     case 'baseline-search': return baselineSearch;
     case 'baseline-notifications': return baselineNotifications;
     case 'baseline-settings': return baselineSettings;
+    case 'logout-outline': return logoutOutline;
     default: return noticeIcon;
   };
 };
