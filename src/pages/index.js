@@ -1,3 +1,5 @@
+import { Provider } from 'react-redux';
+import store from '../store';
 import SideMenu from '../components/SideMenu';
 import {
   AppContainer,
@@ -8,18 +10,20 @@ import {
 
 function App() {
   return (
-    <AppContainer>
-      <SideMenuContainer>
-        <SideMenu>
-          
-        </SideMenu>
-      </SideMenuContainer>
-      <ContentContainer>
-        <TopNavBarContainer>
-          
-        </TopNavBarContainer>
-      </ContentContainer>
-    </AppContainer>
+    <Provider store={store}>
+      <AppContainer>
+        <SideMenuContainer>
+          <SideMenu>
+            
+          </SideMenu>
+        </SideMenuContainer>
+        <ContentContainer>
+          <TopNavBarContainer>
+            
+          </TopNavBarContainer>
+        </ContentContainer>
+      </AppContainer>
+    </Provider>
   );
 }
 
