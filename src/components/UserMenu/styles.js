@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import manPhoto from '../../assets/images/man.png';
 
 export const UserMenuContent = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +12,7 @@ export const UserMenuContent = styled.div`
   padding-left: 14px;
   border-radius: 50px;
   background-color: rgba(47, 68, 134, 0.05);
+  cursor: pointer;
 `;
 
 export const UserName = styled.span`
