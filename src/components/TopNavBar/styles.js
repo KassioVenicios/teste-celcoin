@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import appsIcon from '../../assets/images/apps-icon.svg';
 
 export const TopNavBarContent = styled.div`
   display: flex;
@@ -14,15 +15,34 @@ export const LeftSide = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  position: absolute;
-  top: 10px;
-  left: 10px;
   width: 20px;
   height: 20px;
-  color: #787686;
+  color: #2C2E3D;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 20px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #FF001F;
+    visibility: ${props => !! props.active ? 'visible' : 'hidden'};
+  }
+`;
+
+export const IconSearchContainer = styled(IconContainer)`
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 10px;
+  color: #787686;
 `;
 
 export const Search = styled.input`
@@ -37,5 +57,13 @@ export const Search = styled.input`
 `;
 
 export const RightSide = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
+export const AppsIcon = styled.div`
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  background-image: url(${appsIcon});
 `;

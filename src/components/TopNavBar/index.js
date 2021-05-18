@@ -1,7 +1,9 @@
 import { Icon } from '@iconify/react';
 import { getIcon } from '../../utils/iconify-icons';
 import {
+  AppsIcon,
   IconContainer,
+  IconSearchContainer,
   LeftSide,
   RightSide,
   Search,
@@ -12,13 +14,19 @@ function TopNavBar() {
   return (
     <TopNavBarContent>
       <LeftSide>
-        <IconContainer>
+        <IconSearchContainer>
           <Icon icon={getIcon('baseline-search')} />
-        </IconContainer>
+        </IconSearchContainer>
         <Search placeholder='Busca...' className='placeholderInput' />
       </LeftSide>
       <RightSide>
-
+        <IconContainer>
+          <Icon icon={getIcon('baseline-settings')} />
+        </IconContainer>
+        <IconContainer active={true}>
+          <Icon icon={getIcon('baseline-notifications')} />
+        </IconContainer>
+        <AppsIcon />
       </RightSide>
     </TopNavBarContent>
   );
