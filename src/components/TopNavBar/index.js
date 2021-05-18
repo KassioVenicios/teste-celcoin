@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import { getIcon } from '../../utils/iconify-icons';
+import UserMenu from '../UserMenu';
 import {
   AppsIcon,
   IconContainer,
@@ -26,6 +27,7 @@ function TopNavBar() {
         <IconContainer active={true}>
           <Icon icon={getIcon('baseline-notifications')} />
         </IconContainer>
+        <UserMenu />
         <AppsIcon />
       </RightSide>
     </TopNavBarContent>
