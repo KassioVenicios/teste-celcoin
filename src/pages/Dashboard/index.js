@@ -1,8 +1,10 @@
 import { Provider, useSelector } from 'react-redux';
-import store from '../../store/mostperformedtest';
+import mostPerformedTestStore from '../../store/mostperformedtest';
+import attendanceHistoricStore from '../../store/attendanceHistoric';
 import InfoCard from '../../components/InfoCard';
 import MostPerformedTest from '../../components/MostPerformedTest';
 import BlueButton from '../../components/BlueButton';
+import AttendanceHistoricList from '../../components/AttendanceHistoricList';
 import {
   CardsList,
   Section,
@@ -27,17 +29,19 @@ function Dashboard() {
       </Section>
       <SectionLine>
         <Section className='size3-4'>
-          <SectionTitle>
-            Histórico de atendimentos
-            <span style={{ marginRight: '16px' }}/>
-            <BlueButton>ver todos</BlueButton>
-          </SectionTitle>
-          <SectionCard>
-
-          </SectionCard>
+          <Provider store={attendanceHistoricStore}>
+            <SectionTitle>
+              Histórico de atendimentos
+              <span style={{ marginRight: '16px' }}/>
+              <BlueButton>ver todos</BlueButton>
+            </SectionTitle>
+            <SectionCard>
+              <AttendanceHistoricList />
+            </SectionCard>
+          </Provider>
         </Section>
         <Section className='size1-4'>
-          <Provider store={store}>
+          <Provider store={mostPerformedTestStore}>
             <SectionTitle>Teste mais realizado</SectionTitle>
             <SectionCard>
               <MostPerformedTest />

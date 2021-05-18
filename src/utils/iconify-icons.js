@@ -10,6 +10,7 @@ import bxTestTube from '@iconify-icons/bx/bx-test-tube';
 import bxTestTubeOk from '../assets/images/bx-test-tube-ok.svg';
 import bxTestTubeX from '../assets/images/bx-test-tube-x.svg';
 import uilCell from '../assets/images/uil-cell.svg';
+import uilBrain from '../assets/images/uil-brain.svg';
 
 export const getIcon = name => {
   switch(name) {
@@ -30,6 +31,7 @@ export const getCustomIcon = name => {
     case 'bx-test-tube-ok': return bxTestTubeOk;
     case 'bx-test-tube-x': return bxTestTubeX;
     case 'uil-cell': return uilCell;
+    case 'uil-brain': return uilBrain;
     default: return noticeIcon;
   };
 };
