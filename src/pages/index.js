@@ -3,7 +3,8 @@ import MenuStore from '../store';
 import InfoStore from '../store/generalinfo';
 import SideMenu from '../components/SideMenu';
 import TopNavBar from '../components/TopNavBar';
-import Dashboard from './Dashboard';
+// import Dashboard from './Dashboard';
+import Patients from './Patients';
 import {
   AppContainer,
   ContentContainer,
@@ -25,7 +26,8 @@ function App() {
           </TopNavBarContainer>
           <PageContainer>
             <Provider store={InfoStore}>
-              <Dashboard />
+              {/* <Dashboard /> */}
+              <Patients />
             </Provider>
           </PageContainer>
         </ContentContainer>

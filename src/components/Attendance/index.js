@@ -8,9 +8,9 @@ import {
   CardValue,
 } from './styles';
 
-function Attendance({ attendance }) {
+function Attendance({ attendance, isHistoric }) {
   return (
-    <AttendanceContainer>
+    <AttendanceContainer isHistoric={isHistoric}>
       <CardHeader>
         <AttendanceIcon icon={attendance.icon} />
       </CardHeader>

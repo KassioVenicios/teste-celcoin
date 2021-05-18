@@ -4,14 +4,17 @@ import {
   AttendanceHistoricListContainer
 } from './styles';
 
-function AttendanceHistoricList() {
+function AttendanceHistoricList({ isHistoric }) {
 
   const Attendances = useSelector(state => state.attendanceHistoric);
+  const AttendancesFiltered = ! isHistoric ? Attendances : Attendances.slice(0, 4);
 
   return (
     <AttendanceHistoricListContainer>
       {
-        Attendances.map(item => <Attendance key={item.id} attendance={item} />)
+        AttendancesFiltered.map(item => (
+          <Attendance key={item.id} attendance={item} isHistoric={isHistoric} />
+        ))
       }
     </AttendanceHistoricListContainer>
   );

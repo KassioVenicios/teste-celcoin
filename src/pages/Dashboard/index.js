@@ -38,7 +38,7 @@ function Dashboard() {
               <BlueButton>ver todos</BlueButton>
             </SectionTitle>
             <SectionCard>
-              <AttendanceHistoricList />
+              <AttendanceHistoricList isHistoric={true} />
             </SectionCard>
           </Provider>
         </Section>
