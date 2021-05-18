@@ -7,6 +7,7 @@ import baselineSettings from '@iconify-icons/ic/baseline-settings';
 import logoutOutline from '@iconify-icons/heroicons-outline/logout';
 import baselinePersonOutline from '@iconify-icons/ic/baseline-person-outline';
 import bxTestTube from '@iconify-icons/bx/bx-test-tube';
+import bxDotsHorizontalRounded from '@iconify-icons/bx/bx-dots-horizontal-rounded';
 import bxTestTubeOk from '../assets/images/bx-test-tube-ok.svg';
 import bxTestTubeX from '../assets/images/bx-test-tube-x.svg';
 import uilCell from '../assets/images/uil-cell.svg';
@@ -22,6 +23,7 @@ export const getIcon = name => {
     case 'logout-outline': return logoutOutline;
     case 'baseline-person-outline': return baselinePersonOutline;
     case 'bx-test-tube': return bxTestTube;
+    case 'bx-dots-horizontal-rounded': return bxDotsHorizontalRounded;
     default: return noticeIcon;
   };
 };

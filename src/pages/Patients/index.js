@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 import patientsStore from '../../store/patients';
 import attendanceHistoricStore from '../../store/attendanceHistoric';
 import AttendanceHistoricList from '../../components/AttendanceHistoricList';
+import PatientsCard from '../../components/PatientsCard';
 import {
   Section,
   SectionCard,
@@ -25,7 +26,7 @@ function Patients() {
         <Provider store={patientsStore}>
           <SectionTitle>Todos os pacientes</SectionTitle>
           <SectionCard>
-            
+            <PatientsCard />
           </SectionCard>
         </Provider>
       </Section>
