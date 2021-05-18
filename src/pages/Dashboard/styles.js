@@ -32,6 +32,13 @@ export const SectionCard = styled.div`
   &:hover {
     box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
   }
+  &.effect:hover {
+    /* border: 1px solid; */
+    /* border-image-source: radial-gradient(83.28% 83.28% at 46.47% 41.25%, #F70186 0%, rgba(246, 1, 143, 0) 100%); */
+    box-shadow: 0px 1px 26px rgba(71, 87, 122, 0.08);
+    filter: drop-shadow(0px 8px 26px rgba(71, 87, 122, 0.3));
+    background: linear-gradient(42.45deg, #FFF 13.8%, rgba(255, 255, 255, 0) 93.21%);
+  }
 `;
 
 export const SectionTitle = styled.h1`

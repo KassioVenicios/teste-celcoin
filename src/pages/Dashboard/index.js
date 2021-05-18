@@ -45,7 +45,7 @@ function Dashboard() {
         <Section className='size1-4'>
           <Provider store={mostPerformedTestStore}>
             <SectionTitle>Teste mais realizado</SectionTitle>
-            <SectionCard>
+            <SectionCard className='effect'>
               <MostPerformedTest />
             </SectionCard>
           </Provider>
