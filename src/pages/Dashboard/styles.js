@@ -1,7 +1,26 @@
 import styled from 'styled-components';
 
+export const SectionLine = styled.div`
+  display: flex;
+`;
+
 export const Section = styled.div`
   margin-bottom: 56px;
+  &.size3-4 {
+    flex-grow: 1;
+  }
+  &.size1-4 {
+    margin-left: 16px;
+    width: calc(100%/4 - 3*4px);
+  }
+`;
+
+export const SectionCard = styled.div`
+  height: 320px;
+  padding: 16px;
+  background: #FFF;
+  border-radius: 6px;
+  box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
 `;
 
 export const SectionTitle = styled.h1`

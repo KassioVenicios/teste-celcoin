@@ -7,6 +7,9 @@ import baselineSettings from '@iconify-icons/ic/baseline-settings';
 import logoutOutline from '@iconify-icons/heroicons-outline/logout';
 import baselinePersonOutline from '@iconify-icons/ic/baseline-person-outline';
 import bxTestTube from '@iconify-icons/bx/bx-test-tube';
+import bxTestTubeOk from '../assets/images/bx-test-tube-ok.svg';
+import bxTestTubeX from '../assets/images/bx-test-tube-x.svg';
+import uilCell from '../assets/images/uil-cell.svg';
 
 export const getIcon = name => {
   switch(name) {
@@ -18,6 +21,15 @@ export const getIcon = name => {
     case 'logout-outline': return logoutOutline;
     case 'baseline-person-outline': return baselinePersonOutline;
     case 'bx-test-tube': return bxTestTube;
+    default: return noticeIcon;
+  };
+};
+
+export const getCustomIcon = name => {
+  switch(name) {
+    case 'bx-test-tube-ok': return bxTestTubeOk;
+    case 'bx-test-tube-x': return bxTestTubeX;
+    case 'uil-cell': return uilCell;
     default: return noticeIcon;
   };
 };

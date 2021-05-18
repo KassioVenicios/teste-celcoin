@@ -1,8 +1,12 @@
-import { useSelector } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
+import store from '../../store/mostperformedtest';
 import InfoCard from '../../components/InfoCard';
+import MostPerformedTest from '../../components/MostPerformedTest';
 import {
   CardsList,
   Section,
+  SectionCard,
+  SectionLine,
   SectionTitle,
   SectionTitleButton,
 } from './styles';
@@ -21,12 +25,25 @@ function Dashboard() {
           }
         </CardsList>
       </Section>
-      <Section>
-        <SectionTitle>
-          Histórico de atendimentos
-          <SectionTitleButton>ver todos</SectionTitleButton>
-        </SectionTitle>
-      </Section>
+      <SectionLine>
+        <Section className='size3-4'>
+          <SectionTitle>
+            Histórico de atendimentos
+            <SectionTitleButton>ver todos</SectionTitleButton>
+          </SectionTitle>
+          <SectionCard>
+
+          </SectionCard>
+        </Section>
+        <Section className='size1-4'>
+          <Provider store={store}>
+            <SectionTitle>Teste mais realizado</SectionTitle>
+            <SectionCard>
+              <MostPerformedTest />
+            </SectionCard>
+          </Provider>
+        </Section>
+      </SectionLine>
     </>
   );
 }

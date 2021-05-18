@@ -1,14 +1,5 @@
 import styled from 'styled-components';
-import bxTestTubeOk from '../../assets/images/bx-test-tube-ok.svg';
-import bxTestTubeX from '../../assets/images/bx-test-tube-x.svg';
-
-function getCustomIcon(icon) {
-  switch(icon) {
-    case 'bx-test-tube-ok': return bxTestTubeOk;
-    case 'bx-test-tube-x': return bxTestTubeX;
-    default: return bxTestTubeOk;
-  }
-}
+import { getCustomIcon } from '../../utils/iconify-icons';
 
 export const Card = styled.div`
   display: inline-block;
