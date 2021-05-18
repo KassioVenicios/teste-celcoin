@@ -29,5 +29,5 @@ export const TopNavBarContainer = styled.div`
 export const PageContainer = styled.div`
   overflow: overlay;
   padding: 32px 40px 0 32px;
-  height: calc(86.1% - 24px);
+  height: calc(100% - 88px - 30px);
 `;
