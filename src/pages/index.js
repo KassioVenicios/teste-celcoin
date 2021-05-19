@@ -1,5 +1,10 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import { Provider } from 'react-redux';
-import MenuStore from '../store';
+import MenuStore from '../store/menus';
 import InfoStore from '../store/generalinfo';
 import SideMenu from '../components/SideMenu';
 import TopNavBar from '../components/TopNavBar';
@@ -17,20 +22,36 @@ function App() {
   return (
     <Provider store={MenuStore}>
       <AppContainer>
-        <SideMenuContainer>
-          <SideMenu />
-        </SideMenuContainer>
-        <ContentContainer>
-          <TopNavBarContainer>
-            <TopNavBar />
-          </TopNavBarContainer>
-          <PageContainer>
-            <Provider store={InfoStore}>
-              <Dashboard />
-              <Patients />
-            </Provider>
-          </PageContainer>
-        </ContentContainer>
+        <Router>
+
+          <SideMenuContainer>
+            <SideMenu />
+          </SideMenuContainer>
+
+          <ContentContainer>
+
+            <TopNavBarContainer>
+              <TopNavBar />
+            </TopNavBarContainer>
+
+            <PageContainer>
+              <Provider store={InfoStore}>
+                <Switch>
+                  <Route exact path='/'>
+                    <Dashboard />
+                  </Route>
+                </Switch>
+                <Switch>
+                  <Route exact path='/pacientes'>
+                    <Patients />
+                  </Route>
+                </Switch>
+              </Provider>
+            </PageContainer>
+
+          </ContentContainer>
+
+        </Router>
       </AppContainer>
     </Provider>
   );
