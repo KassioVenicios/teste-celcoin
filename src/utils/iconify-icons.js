@@ -1,4 +1,5 @@
 import homeOutlined from '@iconify-icons/ant-design/home-outlined';
+import editFilled from '@iconify-icons/ant-design/edit-filled';
 import productDonwloadable from '@iconify-icons/gridicons/product-downloadable';
 import noticeIcon from '@iconify-icons/gridicons/notice';
 import baselineSearch from '@iconify-icons/ic/baseline-search';
@@ -16,6 +17,7 @@ import uilBrain from '../assets/images/uil-brain.svg';
 export const getIcon = name => {
   switch(name) {
     case 'home-outlined': return homeOutlined;
+    case 'edit-filled': return editFilled;
     case 'product-downloadable': return productDonwloadable;
     case 'baseline-search': return baselineSearch;
     case 'baseline-notifications': return baselineNotifications;

@@ -1,15 +1,13 @@
 import PatientsHeader from '../PatientsHeader';
-import {
-  PatientsHeaderContainer,
-} from './styles';
+import PatientsList from '../PatientsList';
+import {} from './styles';
 
 function PatientsCard() {
 
   return (
     <>
-      <PatientsHeaderContainer>
-        <PatientsHeader />
-      </PatientsHeaderContainer>
+      <PatientsHeader />
+      <PatientsList />
     </>
   );
 }
