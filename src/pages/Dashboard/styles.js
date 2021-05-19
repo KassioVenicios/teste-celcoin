@@ -9,11 +9,11 @@ export const Section = styled.div`
   flex-direction: column;
   margin-bottom: 48px;
   &.size3-4 {
-    flex-grow: 1;
+    width: calc(3*100%/4 + 32px);
   }
   &.size1-4 {
     margin-left: 16px;
-    width: calc(100%/4 - 3*4px);
+    width: calc(1*100%/4);
   }
   &.mg-b-16 {
     margin-bottom: 16px;
