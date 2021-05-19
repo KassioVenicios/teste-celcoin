@@ -14,8 +14,7 @@ const selectColor = type => {
 export const PatientInfoContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 96px;
+  min-width: max-content;
   padding: 16px;
   border-radius: 6px;
   background-color: #FFF;
@@ -91,14 +90,16 @@ export const TestQty = styled.div`
 export const TestDesc = styled.div`
   font-family: 'Poppins-Regular';
   font-size: 14px;
-  line-height: 24px;
+  line-height: 16px;
   font-style: normal;
+  margin-top: 8px;
 `;
 
 export const PatientActions = styled.div`
   display: flex;
   align-self: center;
   justify-self: end;
+  margin-left: 16px;
 `;
 
 export const EditButtonCircle = styled.div`

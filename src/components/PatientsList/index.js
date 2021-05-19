@@ -10,13 +10,13 @@ function PatientsList() {
   const patients = useSelector(state => state.patients);
 
   return (
-    <PerfectScrollBar>
-      <PatientsListContainer>
+    <PatientsListContainer>
+      <PerfectScrollBar>
         {
           patients.map(item => <PatientInfo key={item.id} patient={item} />)
         }
-      </PatientsListContainer>
-    </PerfectScrollBar>
+      </PerfectScrollBar>
+    </PatientsListContainer>
   );
 }
 
