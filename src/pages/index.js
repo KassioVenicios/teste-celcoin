@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import PerfectScrollbar from 'react-perfect-scrollbar';
 import MenuStore from '../store/menus';
 import InfoStore from '../store/generalinfo';
 import SideMenu from '../components/SideMenu';
@@ -29,11 +30,13 @@ function App() {
             <TopNavBar />
           </TopNavBarContainer>
 
-          <PageContainer>
-            <Provider store={InfoStore}>
-              <AppRoutes />
-            </Provider>
-          </PageContainer>
+          <PerfectScrollbar className='scroll-page'>
+            <PageContainer>
+              <Provider store={InfoStore}>
+                <AppRoutes />
+              </Provider>
+            </PageContainer>
+          </PerfectScrollbar>
 
         </ContentContainer>
 

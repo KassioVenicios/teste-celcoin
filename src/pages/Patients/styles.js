@@ -22,7 +22,7 @@ export const SectionCard = styled.div`
   transition: .5s ease-in-out;
   box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
 
-  &:hover {
+  &.hoverable:hover {
     box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
   }
 `;

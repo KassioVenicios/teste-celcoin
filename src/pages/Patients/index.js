@@ -16,13 +16,13 @@ function Patients() {
       <Section>
         <Provider store={attendanceHistoricStore}>
           <SectionTitle>Atualizações de pacientes</SectionTitle>
-          <SectionCard>
+          <SectionCard className='hoverable'>
             <AttendanceHistoricList isHistoric={false} />
           </SectionCard>
         </Provider>
       </Section>
 
-      <Section>
+      <Section className='margin-16'>
         <Provider store={patientsStore}>
           <SectionTitle>Todos os pacientes</SectionTitle>
           <SectionCard>

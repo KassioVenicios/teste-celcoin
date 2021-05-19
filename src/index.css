@@ -86,3 +86,6 @@ a, a:link, a:visited, a:hover, a:active {
   transition: opacity 250ms ease-in;
 }
 
+.scrollbar-container.scroll-page {
+  height: calc(100% - 88px - 30px);
+}
