@@ -16,9 +16,10 @@ export const SectionCard = styled.div`
     + largura da janela
     - padding do body
     - largura do menu lateral
-    - padding do container)
+    - padding do container
+    - padding do card)
   */
-  max-width: calc(100vw - 64px - 248px - 72px);
+  max-width: calc(100vw - 64px - 248px - 72px - 16px);
   flex-grow: 1;
   background: #FFF;
   min-height: 320px;
