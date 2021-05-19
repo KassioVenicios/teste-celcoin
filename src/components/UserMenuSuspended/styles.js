@@ -27,9 +27,8 @@ export const UserMenuItem = styled.div`
 `;
 
 export const UserMenuItemText = styled.span`
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   font-style: normal;
-  font-weight: bold;
   font-size: 12px;
   line-height: 16px;
   color: #303B5A;

@@ -23,9 +23,8 @@ export const Description = styled.span`
   padding-left: 15px;
   align-items: center;
   justify-content: space-between;
-  font-family: Poppins;
+  font-family: 'Poppins-Medium';
   font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1px;

@@ -8,13 +8,12 @@ export const PatientsHeaderContainer = styled.div`
 `;
 
 export const HeaderTitle = styled.span`
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   display: flex;
   align-items: center;
   font-size: 16px;
   line-height: 40px;
   margin-right: 8px;
-  font-weight: bold;
   font-style: normal;
   color: rgba(86, 84, 104, 0.6);
 `;

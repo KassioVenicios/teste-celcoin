@@ -55,9 +55,8 @@ export const CardHover = styled.div`
 `;
 
 export const CardHoverTitle = styled.span`
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   font-style: normal;
-  font-weight: bold;
   font-size: 12px;
   line-height: 16px;
   padding-bottom: 8px;
@@ -65,9 +64,8 @@ export const CardHoverTitle = styled.span`
 `;
 
 export const CardHoverData = styled.span`
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   font-style: normal;
-  font-weight: bold;
   font-size: 22px;
   line-height: 24px;
   color: ${props => props.color};
@@ -97,9 +95,8 @@ export const CustomIcon = styled.div`
 `;
 
 export const CardData = styled.h2`
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 32px;
   letter-spacing: 1px;
@@ -109,9 +106,8 @@ export const CardData = styled.h2`
 `;
 
 export const CardTitle = styled.h3`
-  font-family: Poppins;
+  font-family: 'Poppins-Regular';
   font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #303B5B;
@@ -120,9 +116,8 @@ export const CardTitle = styled.h3`
 
 export const CardVariance = styled.span`
   float: right;
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   font-style: normal;
-  font-weight: bold;
   font-size: 10px;
   line-height: 15px;
   display: flex;

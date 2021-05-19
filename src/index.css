@@ -1,45 +1,45 @@
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins-Regular';
   src: local('Poppins'), url('./assets/fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins-Medium';
   src: local('Poppins'), url('./assets/fonts/Poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins-SemiBold';
   src: local('Poppins'), url('./assets/fonts/Poppins/Poppins-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: 'Poppins-Bold';
   src: local('Poppins'), url('./assets/fonts/Poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: local('Poppins'), url('./assets/fonts/Poppins/Poppins-Black.ttf');
+  font-family: 'Poppins-Black';
+  src: local('Poppins-Black'), url('./assets/fonts/Poppins/Poppins-Black.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Regular';
   src: local('Open Sans'), url('./assets/fonts/OpenSans/OpenSans-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-SemiBold';
   src: local('Open Sans'), url('./assets/fonts/OpenSans/OpenSans-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Bold';
   src: local('Open Sans'), url('./assets/fonts/OpenSans/OpenSans-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-ExtraBold';
   src: local('Open Sans'), url('./assets/fonts/OpenSans/OpenSans-ExtraBold.ttf');
 }
 
@@ -62,9 +62,8 @@ code {
 }
 
 .placeholderInput::placeholder {
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Regular';
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   display: flex;

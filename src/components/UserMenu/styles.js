@@ -16,9 +16,8 @@ export const UserMenuContent = styled.div`
 `;
 
 export const UserName = styled.span`
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Regular';
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 19px;
   color: rgba(86, 84, 104, 0.8);

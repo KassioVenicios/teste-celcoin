@@ -33,7 +33,8 @@ function SideMenu() {
     <>
       <Header>
         <Logo />
-        <HeaderTitle><HeaderTitleBold>IDENT</HeaderTitleBold>LOGO</HeaderTitle>
+        <HeaderTitleBold>IDENT</HeaderTitleBold>
+        <HeaderTitle>LOGO</HeaderTitle>
       </Header>
       <LineDivisor />
       <Items>

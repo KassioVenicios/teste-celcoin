@@ -46,28 +46,25 @@ export const PatientData = styled.div`
 `;
 
 export const PatientDiagnostic = styled.div`
-  font-family: Poppins;
+  font-family: 'Poppins-SemiBold';
   font-size: 12px;
   line-height: 16px;
-  font-weight: 600;
   font-style: normal;
   color: #1EAC79;
 `;
 
 export const PatientName = styled.div`
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Bold';
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   font-style: normal;
   color: #303B5B;
 `;
 
 export const StaticText = styled.div`
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-ExtraBold';
   font-size: 10px;
   line-height: 10px;
-  font-weight: 800;
   font-style: normal;
   color: rgba(48, 59, 91, 0.3);
   text-transform: uppercase;
@@ -83,21 +80,19 @@ export const TestData = styled.div`
 `;
 
 export const TestQty = styled.div`
-  font-family: Poppins;
+  font-family: 'Poppins-Bold';
   font-size: 36px;
   line-height: 32px;
-  font-weight: bold;
   font-style: normal;
   letter-spacing: 1px;
   margin-bottom: 8px;
 `;
 
 export const TestDesc = styled.div`
-  font-family: Poppins;
+  font-family: 'Poppins-Regular';
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
-  font-weight: normal;
 `;
 
 export const PatientActions = styled.div`
@@ -128,10 +123,9 @@ export const EditButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Bold';
   font-size: 10px;
   line-height: 10px;
-  font-weight: bold;
   font-style: normal;
   letter-spacing: 1px;
   text-transform: uppercase;

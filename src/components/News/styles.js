@@ -30,9 +30,8 @@ export const NewsData = styled.div`
 `;
 
 export const StaticInfo = styled.span`
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-ExtraBold';
   font-size: 10px;
-  font-weight: 800;
   line-height: 12px;
   font-style: normal;
   text-transform: uppercase;
@@ -40,21 +39,19 @@ export const StaticInfo = styled.span`
 `;
 
 export const PatientName = styled.span`
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Bold';
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   font-style: normal;
   color: #303B5B;
   margin: 8px 0;
 `;
 
 export const NewsTitle = styled.span`
-  font-family: 'Open Sans';
+  font-family: 'OpenSans-Regular';
   font-size: 12px;
   line-height: 16px;
   font-style: normal;
-  font-weight: normal;
   text-transform: uppercase;
   margin-bottom: 16px;
   color: ${props => props.isCompleted ? '#1EAC79' : '#EF0C35'};
