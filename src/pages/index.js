@@ -1,15 +1,10 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import MenuStore from '../store/menus';
 import InfoStore from '../store/generalinfo';
 import SideMenu from '../components/SideMenu';
 import TopNavBar from '../components/TopNavBar';
-import Dashboard from './Dashboard';
-import Patients from './Patients';
+import AppRoutes from '../routes';
 import {
   AppContainer,
   ContentContainer,
@@ -24,32 +19,23 @@ function App() {
       <AppContainer>
         <Router>
 
-          <SideMenuContainer>
-            <SideMenu />
-          </SideMenuContainer>
+        <SideMenuContainer>
+          <SideMenu />
+        </SideMenuContainer>
 
-          <ContentContainer>
+        <ContentContainer>
 
-            <TopNavBarContainer>
-              <TopNavBar />
-            </TopNavBarContainer>
+          <TopNavBarContainer>
+            <TopNavBar />
+          </TopNavBarContainer>
 
-            <PageContainer>
-              <Provider store={InfoStore}>
-                <Switch>
-                  <Route exact path='/'>
-                    <Dashboard />
-                  </Route>
-                </Switch>
-                <Switch>
-                  <Route exact path='/pacientes'>
-                    <Patients />
-                  </Route>
-                </Switch>
-              </Provider>
-            </PageContainer>
+          <PageContainer>
+            <Provider store={InfoStore}>
+              <AppRoutes />
+            </Provider>
+          </PageContainer>
 
-          </ContentContainer>
+        </ContentContainer>
 
         </Router>
       </AppContainer>

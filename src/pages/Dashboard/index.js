@@ -20,7 +20,7 @@ function Dashboard() {
   const Info = useSelector(state => state.info);
 
   return (
-    <>
+    <div>
       <Section>
         <SectionTitle>Informações Gerais</SectionTitle>
         <CardsList>
@@ -57,7 +57,7 @@ function Dashboard() {
           <NewsList />
         </Provider>
       </Section>
-    </>
+    </div>
   );
 }
 

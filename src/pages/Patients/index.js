@@ -12,7 +12,7 @@ import {
 function Patients() {
 
   return (
-    <>
+    <div>
       <Section>
         <Provider store={attendanceHistoricStore}>
           <SectionTitle>Atualizações de pacientes</SectionTitle>
@@ -30,7 +30,7 @@ function Patients() {
           </SectionCard>
         </Provider>
       </Section>
-    </>
+    </div>
   );
 }
 
