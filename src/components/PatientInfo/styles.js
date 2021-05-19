@@ -141,4 +141,5 @@ export const EditButton = styled.div`
   margin-right: 16px;
   border-radius: 16px;
   background: ${props => selectColor(props.color)};
+  cursor: pointer;
 `;

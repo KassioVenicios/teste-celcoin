@@ -22,6 +22,7 @@ export const IconContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 
   &:after {
     content: '';
@@ -41,6 +42,7 @@ export const IconSearchContainer = styled(IconContainer)`
   top: 10px;
   left: 10px;
   color: #787686;
+  cursor: default;
 `;
 
 export const Search = styled.input`
@@ -66,5 +68,6 @@ export const RightSide = styled.div`
 export const AppsIcon = styled.div`
   width: 20px;
   height: 20px;
+  cursor: pointer;
   background-image: url(${appsIcon});
 `;
