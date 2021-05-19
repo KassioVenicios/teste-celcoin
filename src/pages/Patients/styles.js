@@ -6,13 +6,19 @@ export const Section = styled.div`
   margin-bottom: 48px;
   position: relative;
 
-  &.margin-16 {
+  &.mg-16 {
     margin-bottom: 16px;
   }
 `;
 
 export const SectionCard = styled.div`
-  width: 100%;
+  /* calc(
+    + largura da janela
+    - padding do body
+    - largura do menu lateral
+    - padding do container)
+  */
+  max-width: calc(100vw - 64px - 248px - 72px);
   flex-grow: 1;
   background: #FFF;
   min-height: 320px;
@@ -25,7 +31,11 @@ export const SectionCard = styled.div`
     box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
   }
 
-  &.padding-16 {
+  &.pd-r-16 {
+    padding-right: 16px;
+  }
+
+  &.pd-b-16 {
     padding-bottom: 16px;
   }
 `;

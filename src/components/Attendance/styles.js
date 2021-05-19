@@ -5,7 +5,10 @@ import { getCustomIcon } from '../../utils/iconify-icons';
 export const AttendanceContainer = styled.div`
   margin-right: 16px;
   border-radius: 6px;
-  width: ${props => !! props.isHistoric ? 'calc(100%/4)' : '264px'};
+  ${props => !! props.isHistoric ?
+    'width: calc(100%/4);' :
+    'min-width: 264px;'
+  };
   border: 1px solid #EDF1F8;
 
   &:nth-last-child(1) {

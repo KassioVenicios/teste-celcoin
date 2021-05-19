@@ -30,6 +30,20 @@ const INITIAL_STATE = {
       testName: 'Autismo',
       date: '20/09/2023',
     },
+    {
+      id: 5,
+      icon: 'uil-brain',
+      patientName: 'Renata Augusto Ferreira',
+      testName: 'TDAH CAB ADHD',
+      date: '20/10/2023',
+    },
+    {
+      id: 6,
+      icon: 'uil-cell',
+      patientName: 'Renata Augusto Ferreira',
+      testName: 'Autismo',
+      date: '20/09/2023',
+    },
   ],
 };
 

@@ -45,13 +45,13 @@ function Dashboard() {
         <Section className='size1-4'>
           <Provider store={mostPerformedTestStore}>
             <SectionTitle>Teste mais realizado</SectionTitle>
-            <SectionCard className='effect'>
+            <SectionCard className='effect pd-16'>
               <MostPerformedTest />
             </SectionCard>
           </Provider>
         </Section>
       </SectionLine>
-      <Section className='margin-16'>
+      <Section className='mg-b-16'>
         <SectionTitle>Atualizações importantes</SectionTitle>
         <Provider store={newsStore}>
           <NewsList />

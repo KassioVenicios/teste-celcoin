@@ -15,7 +15,7 @@ export const Section = styled.div`
     margin-left: 16px;
     width: calc(100%/4 - 3*4px);
   }
-  &.margin-16 {
+  &.mg-b-16 {
     margin-bottom: 16px;
   }
 `;
@@ -23,11 +23,14 @@ export const Section = styled.div`
 export const SectionCard = styled.div`
   flex-grow: 1;
   min-height: 320px;
-  padding: 16px;
   background: #FFF;
   border-radius: 6px;
   box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.08);
   transition: .5s ease-in-out;
+
+  &.pd-16 {
+    padding: 16px;
+  }
 
   &:hover {
     box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
