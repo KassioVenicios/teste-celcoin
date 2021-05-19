@@ -1,10 +1,14 @@
 import { createStore } from 'redux';
+import person1 from '../assets/images/person1.png';
+import person4 from '../assets/images/person4.png';
+import person5 from '../assets/images/person5.png';
 
 const INITIAL_STATE = {
   patients: [
     {
       id: 1,
-      patientName: 'Renata Augusto Ferreira',
+      name: 'Renata Augusto Ferreira',
+      photo: person1,
       diagnostic: 'TDAH CAB ADHD, Autismo',
       realizedTests: 3,
       canceledTests: 1,
@@ -12,7 +16,8 @@ const INITIAL_STATE = {
     },
     {
       id: 2,
-      patientName: 'Leandro Motta Braga',
+      name: 'Leandro Motta Braga',
+      photo: person4,
       diagnostic: 'TDAH CAB ADHD, Autismo',
       realizedTests: 6,
       canceledTests: 0,
@@ -20,7 +25,8 @@ const INITIAL_STATE = {
     },
     {
       id: 3,
-      patientName: 'Kuromi Naori Kagasawa',
+      name: 'Kuromi Naori Kagasawa',
+      photo: person5,
       diagnostic: 'TDAH CAB ADHD, Autismo',
       realizedTests: 22,
       canceledTests: 0,
