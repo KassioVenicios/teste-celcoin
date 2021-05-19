@@ -1,4 +1,5 @@
 import Icon from '@iconify/react';
+import { useSelector } from 'react-redux';
 import { getIcon } from '../../utils/iconify-icons';
 import {
   HeaderTitle,
@@ -13,7 +14,7 @@ import {
 
 function PatientsHeader() {
 
-  const qty = 36;
+  const qty = useSelector(state => state.patients.length);
 
   return (
     <PatientsHeaderContainer>
