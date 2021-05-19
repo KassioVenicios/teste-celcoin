@@ -5,6 +5,8 @@ export const PatientsHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 16px;
+  margin-bottom: 16px;
 `;
 
 export const HeaderTitle = styled.span`

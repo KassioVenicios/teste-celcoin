@@ -14,7 +14,6 @@ export const Section = styled.div`
 export const SectionCard = styled.div`
   width: 100%;
   flex-grow: 1;
-  padding: 16px;
   background: #FFF;
   min-height: 320px;
   position: relative;
@@ -24,6 +23,10 @@ export const SectionCard = styled.div`
 
   &.hoverable:hover {
     box-shadow: 0px 8px 26px rgba(71, 87, 122, 0.3);
+  }
+
+  &.padding-16 {
+    padding-bottom: 16px;
   }
 `;
 

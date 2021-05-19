@@ -32,6 +32,33 @@ const INITIAL_STATE = {
       canceledTests: 0,
       pendingTests: 2,
     },
+    {
+      id: 4,
+      name: 'Renata Augusto Ferreira',
+      photo: person1,
+      diagnostic: 'TDAH CAB ADHD, Autismo',
+      realizedTests: 3,
+      canceledTests: 1,
+      pendingTests: 1,
+    },
+    {
+      id: 5,
+      name: 'Leandro Motta Braga',
+      photo: person4,
+      diagnostic: 'TDAH CAB ADHD, Autismo',
+      realizedTests: 6,
+      canceledTests: 0,
+      pendingTests: 50,
+    },
+    {
+      id: 6,
+      name: 'Kuromi Naori Kagasawa',
+      photo: person5,
+      diagnostic: 'TDAH CAB ADHD, Autismo',
+      realizedTests: 22,
+      canceledTests: 0,
+      pendingTests: 2,
+    },
   ],
 };
 

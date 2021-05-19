@@ -25,7 +25,7 @@ function Patients() {
       <Section className='margin-16'>
         <Provider store={patientsStore}>
           <SectionTitle>Todos os pacientes</SectionTitle>
-          <SectionCard>
+          <SectionCard className='padding-16'>
             <PatientsCard />
           </SectionCard>
         </Provider>

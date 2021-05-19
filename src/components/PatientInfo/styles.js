@@ -22,7 +22,7 @@ export const PatientInfoContainer = styled.div`
   border: 1px solid #EFF2F9;
   margin-bottom: 8px;
   &:nth-last-child(1) {
-    margin-bottom: 0;
+    margin-bottom: 16px;
   }
 `;
 
