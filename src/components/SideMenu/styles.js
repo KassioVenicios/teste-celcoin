@@ -58,6 +58,7 @@ export const ItemActiveBackground = styled.div`
   background-color: #EFF2F9;
   border-radius: 30px 0 0 30px;
   transition: top .3s ease-in-out;
+  filter: drop-shadow(-60px 1px 30px rgba(0, 0, 0, 0.15));
 
   &:before {
     content: '';

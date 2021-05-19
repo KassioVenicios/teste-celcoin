@@ -9,6 +9,7 @@ export const AppContainer = styled.div`
 `;
 
 export const SideMenuContainer = styled.div`
+  z-index: 1;
   min-width: 248px;
   height: 100%;
 `;
@@ -18,6 +19,7 @@ export const ContentContainer = styled.div`
   flex-grow: 1;
   border-radius: 30px;
   background-color: #EFF2F9;
+  filter: drop-shadow(0px 1px 30px rgba(0, 0, 0, 0.15));
 `;
 
 export const TopNavBarContainer = styled.div`
