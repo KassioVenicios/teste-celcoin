@@ -55,7 +55,7 @@ export const CardHover = styled.div`
 `;
 
 export const CardHoverTitle = styled.span`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -65,7 +65,7 @@ export const CardHoverTitle = styled.span`
 `;
 
 export const CardHoverData = styled.span`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -97,7 +97,7 @@ export const CustomIcon = styled.div`
 `;
 
 export const CardData = styled.h2`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -109,7 +109,7 @@ export const CardData = styled.h2`
 `;
 
 export const CardTitle = styled.h3`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -120,7 +120,7 @@ export const CardTitle = styled.h3`
 
 export const CardVariance = styled.span`
   float: right;
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 10px;

@@ -16,7 +16,7 @@ export const UserMenuContent = styled.div`
 `;
 
 export const UserName = styled.span`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

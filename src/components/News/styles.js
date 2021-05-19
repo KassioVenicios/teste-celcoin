@@ -30,7 +30,7 @@ export const NewsData = styled.div`
 `;
 
 export const StaticInfo = styled.span`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 10px;
   font-weight: 800;
   line-height: 12px;
@@ -40,7 +40,7 @@ export const StaticInfo = styled.span`
 `;
 
 export const PatientName = styled.span`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -50,7 +50,7 @@ export const PatientName = styled.span`
 `;
 
 export const NewsTitle = styled.span`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 12px;
   line-height: 16px;
   font-style: normal;

@@ -8,7 +8,7 @@ export const PatientsHeaderContainer = styled.div`
 `;
 
 export const HeaderTitle = styled.span`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   display: flex;
   align-items: center;
   font-size: 16px;

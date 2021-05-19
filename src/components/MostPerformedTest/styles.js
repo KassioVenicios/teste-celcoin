@@ -20,7 +20,7 @@ export const CustomIcon = styled.div`
 `;
 
 export const TestName = styled.h2`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 26px;
   font-weight: bold;
   font-style: normal;
@@ -30,7 +30,7 @@ export const TestName = styled.h2`
 `;
 
 export const Subtitle = styled.h3`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 10px;
   font-weight: 800;
   font-style: normal;
@@ -45,7 +45,7 @@ export const Footer = styled.div`
 `;
 
 export const TestData = styled.span`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 26px;
   line-height: 48px;
   font-weight: bold;

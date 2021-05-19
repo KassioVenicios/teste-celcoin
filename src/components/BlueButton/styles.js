@@ -6,7 +6,7 @@ export const BlueButtonContainer = styled.span`
   justify-content: center;
   height: 24px;
   cursor: pointer;
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 10px;
   line-height: 10px;
   font-weight: bold;

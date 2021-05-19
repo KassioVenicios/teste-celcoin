@@ -36,7 +36,7 @@ export const CardData = styled.div`
 `;
 
 export const CardTitle = styled.div`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -45,7 +45,7 @@ export const CardTitle = styled.div`
 `;
 
 export const CardKey = styled.div`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 10px;
   font-weight: 800;
   line-height: 16px;
@@ -56,7 +56,7 @@ export const CardKey = styled.div`
 `;
 
 export const CardValue = styled.div`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;

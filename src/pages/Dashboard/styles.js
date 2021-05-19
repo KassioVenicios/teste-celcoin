@@ -42,7 +42,7 @@ export const SectionCard = styled.div`
 `;
 
 export const SectionTitle = styled.h1`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;

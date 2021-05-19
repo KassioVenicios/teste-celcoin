@@ -18,7 +18,7 @@ export const Logo = styled.div`
 `;
 
 export const HeaderTitle = styled.span`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   margin: 0;
   color: #FFF;
   font-size: 26px;

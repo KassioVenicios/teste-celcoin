@@ -46,7 +46,7 @@ export const PatientData = styled.div`
 `;
 
 export const PatientDiagnostic = styled.div`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-size: 12px;
   line-height: 16px;
   font-weight: 600;
@@ -55,7 +55,7 @@ export const PatientDiagnostic = styled.div`
 `;
 
 export const PatientName = styled.div`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -64,7 +64,7 @@ export const PatientName = styled.div`
 `;
 
 export const StaticText = styled.div`
-  /* font-family: 'Open Sans'; */
+  font-family: 'Open Sans';
   font-size: 10px;
   line-height: 10px;
   font-weight: 800;
@@ -83,7 +83,7 @@ export const TestData = styled.div`
 `;
 
 export const TestQty = styled.div`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-size: 36px;
   line-height: 32px;
   font-weight: bold;
@@ -93,7 +93,7 @@ export const TestQty = styled.div`
 `;
 
 export const TestDesc = styled.div`
-  /* font-family: Poppins; */
+  font-family: Poppins;
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
@@ -128,7 +128,7 @@ export const EditButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-family: Open Sans; */
+  font-family: 'Open Sans';
   font-size: 10px;
   line-height: 10px;
   font-weight: bold;
